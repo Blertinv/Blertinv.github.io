@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan</title>
+    <style>
+        table,th,td { border: 1px solid black;
+ border-collapse: collapse;
+ padding: 10px;
+}
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr >
+                <th>Group</th>
+                <th>Student Name</th>
+                <th>Domain</th>
+                <th>Deadline</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Group 1</td>
+                <td>John Smith</td>
+                <td>ml</td>
+                <td rowspan="8">March 31,2023</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>cv</td>
+            </tr>
+            <tr>
+                <td>Micheal johnson</td>
+                <td>ai</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Group 2</td>
+                <td>Emily Brown</td>
+                <td>bd</td>
+            </tr>
+            <tr>
+                <td>Mark wilnson</td>
+                <td>ds</td>
+            </tr>
+          
+        </tbody>
+    </table>
+</body>
+</html>
