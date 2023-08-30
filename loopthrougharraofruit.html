@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Click the button to loop through an array of fruits:</h1>
+
+    <button type="button" onclick="loopThrough()">                                                   
+    Loop through an array</button> 
+    <p id="result"></p>
+    <script>
+        function loopThrough() {
+            const fruits = ["Apple", "Banana", "Cherry", "Date"];
+            let text = "";
+            for (const element of fruits) {
+                text += element + "<br>";
+            }
+            document.getElementById("result").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
